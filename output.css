@@ -559,6 +559,18 @@ video {
   margin-bottom: 5rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -704,12 +716,20 @@ video {
   padding: 2.5rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .text-center {
