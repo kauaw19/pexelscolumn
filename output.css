@@ -748,10 +748,26 @@ video {
   opacity: 1;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
 .hover\:opacity-0:hover {
   opacity: 0;
 }
 
 .hover\:opacity-100:hover {
   opacity: 1;
+}
+
+.hover\:duration-300:hover {
+  transition-duration: 300ms;
+}
+
+.hover\:ease-in:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
