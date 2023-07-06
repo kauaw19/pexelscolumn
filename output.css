@@ -530,37 +530,17 @@ video {
   position: relative;
 }
 
-.bottom-3 {
-  bottom: 0.75rem;
+.left-0 {
+  left: 0px;
 }
 
-.top-1 {
-  top: 0.25rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
+.top-0 {
+  top: 0px;
 }
 
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
-}
-
-.mt-auto {
-  margin-top: auto;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .mb-7 {
@@ -579,60 +559,20 @@ video {
   display: inline;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[4\] {
-  height: 4;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-\[800px\] {
-  height: 800px;
-}
-
-.h-\[100px\] {
-  height: 100px;
+.hidden {
+  display: none;
 }
 
 .h-\[1000px\] {
   height: 1000px;
-}
-
-.h-\[000px\] {
-  height: 000px;
-}
-
-.h-\[200px\] {
-  height: 200px;
 }
 
 .h-\[300px\] {
@@ -643,12 +583,44 @@ video {
   height: 400px;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
 .h-\[650px\] {
   height: 650px;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .gap-10 {
@@ -657,12 +629,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .bg-black {
@@ -675,24 +641,18 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\] {
-  background-color: url;
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'https\:\/\/images\.pexels\.com\/photos\/17153107\/pexels-photo-17153107\/free-photo-of-fashion-woman-girl-cute\.jpeg\?auto\=compress\&cs\=tinysrgb\&w\=1260\&h\=750\&dpr\=2\'\)\] {
-  background-image: url('https://images.pexels.com/photos/17153107/pexels-photo-17153107/free-photo-of-fashion-woman-girl-cute.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 
 .bg-cover {
@@ -703,41 +663,29 @@ video {
   background-repeat: no-repeat;
 }
 
-.object-bottom {
-  -o-object-position: bottom;
-     object-position: bottom;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-2 {
   padding: 0.5rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-5 {
   padding: 1.25rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-0 {
-  padding-top: 0px;
+.p-4 {
+  padding: 1rem;
 }
 
 .text-center {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -748,24 +696,39 @@ video {
   opacity: 1;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.ease-in {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.hover\:opacity-0:hover {
-  opacity: 0;
+.hover\:block:hover {
+  display: block;
+}
+
+.hover\:hidden:hover {
+  display: none;
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:opacity-100:hover {
   opacity: 1;
+}
+
+.hover\:opacity-0:hover {
+  opacity: 0;
 }
 
 .hover\:duration-300:hover {
